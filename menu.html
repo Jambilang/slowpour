@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Karla:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<title>Explore | Slow Pour</title>
+</head>
+<body data-page="menu">
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="index.html">Slow Pour</a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="menu.html" aria-current="page">Explore</a>
+      <a href="community.html">Community</a>
+    </nav>
+  </div>
+</header>
+<main>
+  <div class="wrap">
+    <div class="page-head">
+      <h1>Explore drinks</h1>
+      <p>Scroll through the menu, search for something you like, and open the comments to say what you think.</p>
+    </div>
+    <div class="tools">
+      <div class="tabs">
+        <button type="button" data-type="hot" aria-pressed="true">Hot</button>
+        <button type="button" data-type="iced" aria-pressed="false">Iced</button>
+        <button type="button" data-type="blended" aria-pressed="false">Blended</button>
+      </div>
+      <input type="search" id="search" placeholder="Search a drink or ingredient" aria-label="Search drinks">
+      <span class="meta" id="count"></span>
+    </div>
+    <div class="grid" id="grid"></div>
+    <div class="sentinel" id="sentinel"></div>
+    <section class="addons">
+      <h2>Make it yours</h2>
+      <div id="addons"></div>
+    </section>
+  </div>
+</main>
+<footer>
+  <div class="wrap">
+    <span>Made by Arthur James Valeza, 2nd year ACT</span>
+    <span>Drink data from the Sample APIs coffee endpoint</span>
+  </div>
+</footer>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Karla:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<title>Community | Slow Pour</title>
+</head>
+<body data-page="community">
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="index.html">Slow Pour</a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="menu.html">Explore</a>
+      <a href="community.html" aria-current="page">Community</a>
+    </nav>
+  </div>
+</header>
+<main>
+  <div class="wrap">
+    <div class="page-head">
+      <h1>Community</h1>
+      <p>Share a recipe, a favorite cafe, or a bad cup you survived. Everyone who visits can read and reply.</p>
+    </div>
+    <form class="composer" id="postForm">
+      <h2>Write a post</h2>
+      <input id="pName" placeholder="Your name" maxlength="40" required>
+      <input id="pTitle" placeholder="Title" maxlength="90" required>
+      <textarea id="pBody" rows="5" placeholder="What is on your mind?" maxlength="2000" required></textarea>
+      <button class="btn" type="submit" id="pBtn">Publish post</button>
+      <p class="notice" id="pMsg"></p>
+    </form>
+    <div id="posts"></div>
+  </div>
+</main>
+<footer>
+  <div class="wrap">
+    <span>Made by Arthur James Valeza, 2nd year ACT</span>
+    <span>Drink data from the Sample APIs coffee endpoint</span>
+  </div>
+</footer>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
